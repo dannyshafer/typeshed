@@ -23,7 +23,7 @@ def triangular_lattice_graph(
     periodic: bool = False,
     with_positions: bool = True,
     create_using: Graph[Incomplete] | type[Graph[Incomplete]] | None = None,
-) -> Graph[Incomplete]: ...
+) -> Graph[tuple[int, int]]: ...
 @_dispatchable
 def hexagonal_lattice_graph(
     m: int,
@@ -31,4 +31,4 @@ def hexagonal_lattice_graph(
     periodic: bool = False,
     with_positions: bool = True,
     create_using: Graph[Incomplete] | type[Graph[Incomplete]] | None = None,
-) -> Graph[Incomplete]: ...
+) -> Graph[tuple[int, int]]: ...
